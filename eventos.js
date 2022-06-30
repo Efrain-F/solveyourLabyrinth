@@ -2,14 +2,14 @@ const tabla = document.querySelector(".tabla")
 const itemTabla = document.querySelectorAll(".itemTabla")
 const tablaFila = document.querySelectorAll(".tabla-fila")
 const tablaBody = document.querySelectorAll(".tabla-body")
-
+let btnEmpezar = document.querySelector(".btn-enpezar")
 // para comenzar a resolver el laberinto necesitamos asegurarnos que tengamos un punto de inicio y un final
 let objetivoSeleccionado = false,
 PuntoInicioSeleccionado = false;
 
-//modificarTabla(10)
 // agrander o reducir el tamaño de la tabla
 export function modificarTabla(num){
+    btnEmpezar.innerText = "Iniciar"
     tablaBody.innerHTML = ""
     tabla.innerHTML = ""
     for(let r=0;r<num;r++){
@@ -88,7 +88,6 @@ export function Borrar(){
         }
     }
 }
-let btnEmpezar = document.querySelector(".btn-enpezar")
 export function resolverLaberindo(){
     if(objetivoSeleccionado != false && PuntoInicioSeleccionado != false){
         if(btnEmpezar.innerText == "Iniciar"){

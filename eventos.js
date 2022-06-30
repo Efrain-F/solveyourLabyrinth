@@ -65,13 +65,11 @@ export function crearPuntoInical(){
         PuntoInicioSeleccionado = [parseInt(row),parseInt(colm)]
     }
 }
-
 tabla.addEventListener("click",(e)=>{
     if(e.path[0].innerText.length <9){
         funcionEvento(e)
     }
 })
-
 export function Borrar(){
     funcionEvento = (e)=>{
         if(e.path[0].innerText == "I"){
@@ -90,7 +88,6 @@ export function Borrar(){
         }
     }
 }
-
 let btnEmpezar = document.querySelector(".btn-enpezar")
 export function resolverLaberindo(){
     if(objetivoSeleccionado != false && PuntoInicioSeleccionado != false){
@@ -112,7 +109,6 @@ function soluctionLaberinto(Pinicio){
     // (lista init) = punto inicial
     const matriz = tabla.children[0].rows
     const rowsColum = matriz.length // es una matriz cuadrada
-
     let caminos = []
     let objetivoEncontrado;
     let evitarRepeticiones = 0 // para evitar llamar varias veces la misma funcion
@@ -180,7 +176,5 @@ function soluctionLaberinto(Pinicio){
             else if(indic.innerText > u || indic.innerText== "0" || indic.innerText== "I") pintar(pst,u);
         }
     }
-
     validacion(Pinicio,1)
-    //console.log(matriz[8].children[3].innerText)
 }

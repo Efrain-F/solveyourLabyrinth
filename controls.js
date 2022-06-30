@@ -15,7 +15,6 @@ ColRow.addEventListener("change",(e)=>{
         alert("esta intentando crear una tabla demasiado grande")
         ColRow.value = 10
         modificarTabla(ColRow.value)
-
     }
 })
 btnPared.addEventListener("click",()=>{
@@ -33,16 +32,4 @@ btnEmpezar.addEventListener("click",()=>{
 btnBorrar.addEventListener("click",()=>{
     Borrar()
 })
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,0 +1,102 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #05445E;
+    transition-property: color background-color;
+    transition-duration: .4s;
+}
+html{
+    background-color: #87ACA3;
+}
+button{
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #75E6DA;
+    cursor: pointer;
+}
+.controles{
+    width: 100%;
+    height: 20vh;
+    background-color: #2B7C85;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.code-link{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+.conteiner-tabla{
+    width: 100%;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabla-options{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.tabla-options label{
+    color: #8FDDE7;
+}
+.tabla-options input{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+
+
+.btn-pared{
+    background-color: #8FDDE7;
+}
+.btn-objetivo{
+    background-color: #B6E5D8;
+}
+
+.btn-punto-inicio{
+    background-color:#FBE5C8 ;
+}
+.btn-enpezar{
+    background-color: #FFAEBC;
+}
+.btn-borrar{
+    background-color: #D4F1F4;
+}
+.tabla{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+.itemTabla{
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border-collapse: collapse;
+    display:inline-block;
+    margin: 1px;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    border: 2px solid #05445E;
+}
+
+
+
+
